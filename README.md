@@ -2,6 +2,8 @@
 
 Repositório de estudo para praticar Git, GitHub e o fluxo de trabalho GitFlow.
 
+Atividade 2: documentar os principais comandos e desenvolver um formulário de cadastro com HTML, CSS e JavaScript, registrando cada arquivo em um commit separado.
+
 ## Configuração inicial
 
 ```bash
