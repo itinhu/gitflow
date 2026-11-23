@@ -1,0 +1,162 @@
+:root {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  color: #243047;
+  background: #edf2f8;
+  line-height: 1.5;
+  color-scheme: light;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+  min-height: 100svh;
+  margin: 0;
+  padding: 40px 20px;
+  display: grid;
+  place-items: center;
+  background: linear-gradient(135deg, #edf2f8, #e2eaf8);
+}
+
+.cadastro {
+  width: 100%;
+  max-width: 460px;
+  padding: 36px;
+  border: 1px solid #dce3ee;
+  border-radius: 20px;
+  background: #fff;
+  box-shadow: 0 16px 48px rgb(36 48 71 / 8%);
+}
+
+.cadastro__cabecalho {
+  margin-bottom: 28px;
+}
+
+.cadastro__cabecalho p {
+  margin: 0;
+  color: #526079;
+}
+
+.cadastro__cabecalho p:first-child {
+  margin-bottom: 12px;
+  color: #3456bd;
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
+h1 {
+  margin: 0 0 8px;
+  font-size: clamp(1.6rem, 5vw, 2rem);
+  line-height: 1.2;
+  letter-spacing: -0.04em;
+}
+
+.formulario {
+  display: grid;
+  gap: 20px;
+}
+
+.campo {
+  display: grid;
+  gap: 7px;
+  min-width: 0;
+}
+
+label {
+  font-size: 0.875rem;
+  font-weight: 600;
+}
+
+input,
+button {
+  width: 100%;
+  min-height: 48px;
+  border-radius: 9px;
+  font: inherit;
+}
+
+input {
+  min-width: 0;
+  padding: 11px 13px;
+  border: 1px solid #9aa8bc;
+  color: #243047;
+  background: #fff;
+}
+
+input::placeholder {
+  color: #66748b;
+}
+
+input:focus-visible,
+button:focus-visible {
+  outline: 3px solid #3456bd;
+  outline-offset: 3px;
+}
+
+input[aria-invalid="true"] {
+  border-color: #b42318;
+}
+
+small {
+  color: #526079;
+  font-size: 0.8rem;
+}
+
+button {
+  margin-top: 4px;
+  padding: 12px 20px;
+  border: 1px solid transparent;
+  color: #fff;
+  background: #3456bd;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #274397;
+}
+
+button:active {
+  background: #20377c;
+}
+
+.mensagem {
+  margin: 0;
+  overflow-wrap: anywhere;
+  font-size: 0.875rem;
+}
+
+.mensagem:empty {
+  display: none;
+}
+
+.mensagem.sucesso {
+  padding: 12px;
+  border: 1px solid #a5d5bb;
+  border-radius: 9px;
+  color: #16603b;
+  background: #edf9f1;
+}
+
+.mensagem.erro {
+  padding: 12px;
+  border: 1px solid #efb4ae;
+  border-radius: 9px;
+  color: #9e231a;
+  background: #fff1ef;
+}
+
+@media (max-width: 480px) {
+  body {
+    padding: 24px 16px;
+  }
+
+  .cadastro {
+    padding: 28px 22px;
+    border-radius: 16px;
+  }
+}
